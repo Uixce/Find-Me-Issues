@@ -34,8 +34,7 @@ const Header = (props) => {
         <Nav className="mr-auto"></Nav>
         <Form inline>
           <label className="mr-sm-3">
-            <span>Find specific content in the project description</span>
-            <input type="text" value={inputSearch} onChange={(e) => handleInputSearch(e.target.value)} />
+            <input placeholder="Search in description" type="text" value={inputSearch} onChange={(e) => handleInputSearch(e.target.value)} />
           </label>
           <div id="outlined-basic" className="mr-sm-2">{language}</div>
           <NavDropdown title="Select Language" id="basic-nav-dropdown">
